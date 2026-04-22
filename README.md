@@ -2,6 +2,14 @@
 
 A trilingual (French / English / Arabic) geography guessing game, vibe-coded for a real wedding. Guests drop pins on an interactive world map to guess where other guests are traveling from; a Haversine distance score tells them how close they got.
 
+## Screenshots
+
+The game flow across its three screens — welcome, guessing, result:
+
+| 1. Welcome | 2. Guessing | 3. Result |
+|---|---|---|
+| ![Welcome screen with language selector and placeholder couple names](docs/01-welcome.png) | ![Map with a trilingual clue asking about a Middle Eastern city](docs/02-guessing.png) | ![Round result showing the actual city, country, distance error, and tier feedback](docs/03-result.png) |
+
 ## Context
 
 Built for a French–Lebanese wedding whose invitees are coming from all over the world — France, Lebanon, Palestine, Nepal, USA, the Philippines, Brazil, Côte d'Ivoire, and more. That context drives the specific feature set:
