@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <title>[PERSON A] & [PERSON B] — Le Jeu Géo</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- App -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Welcome Screen ── -->
+  <section id="welcome" class="screen active">
+    <h1 class="welcome-couple" data-i18n="couple">[PERSON A] &amp; [PERSON B]</h1>
+    <p class="welcome-subtitle" data-i18n="subtitle">Le Jeu Géo du Mariage</p>
+    <div class="welcome-divider"></div>
+
+    <div class="lang-selector">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ar">عربي</button>
+    </div>
+
+    <p class="welcome-instructions" data-i18n="instructions">
+      Nos invités viennent des quatre coins du monde ! Devinez d'où ils arrivent en plaçant une épingle sur la carte. Plus vous êtes proche, meilleur est votre score.
+    </p>
+
+    <button id="btn-start" class="btn btn-primary" data-i18n="start">Commencer</button>
+    <button id="btn-resume" class="btn btn-secondary" style="display:none; margin-top:0.75rem"></button>
+  </section>
+
+  <!-- ── Game Screen ── -->
+  <section id="game" class="screen">
+    <header class="game-header">
+      <span id="round-counter" class="game-round">Tour 1/16</span>
+      <span id="score-display" class="game-score">Score: 0 km</span>
+    </header>
+
+    <div id="map"></div>
+
+    <div class="clue-card">
+      <p id="clue-text" class="clue-text"></p>
+      <p class="hint-text"><span data-i18n="hint_label">Zone</span> : <span id="hint-text"></span></p>
+      <button id="btn-submit" class="btn btn-primary" disabled data-i18n="submit">Valider</button>
+    </div>
+
+    <!-- Result Bottom Sheet -->
+    <div id="result-overlay" class="result-overlay">
+      <div class="result-sheet">
+        <div id="result-emoji" class="result-emoji"></div>
+        <div id="result-city" class="result-city"></div>
+        <div id="result-country" class="result-country"></div>
+        <div id="result-distance" class="result-distance"></div>
+        <div id="result-feedback" class="result-feedback"></div>
+        <button id="btn-next" class="btn btn-secondary">Suivant</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Results Screen ── -->
+  <section id="results" class="screen">
+    <h2 class="results-title" data-i18n="results_title">Vos Résultats</h2>
+    <div id="results-total" class="results-total"></div>
+    <div id="results-tier" class="results-avg"></div>
+    <div id="results-avg" class="results-avg"></div>
+    <div id="results-map"></div>
+    <ul id="results-list" class="results-list"></ul>
+    <button id="btn-replay" class="btn btn-primary" data-i18n="replay">Rejouer</button>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>

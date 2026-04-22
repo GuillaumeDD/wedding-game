@@ -1,0 +1,445 @@
+/* ── Wedding Palette ── */
+:root {
+  --rose: #be8a7e;
+  --rose-light: #d4a99f;
+  --rose-dark: #a06e62;
+  --sage: #5e7e6e;
+  --sage-light: #7a9a8a;
+  --sage-dark: #4a6458;
+  --gold: #c9a96e;
+  --gold-light: #ddc48e;
+  --cream: #faf6f2;
+  --text: #3a3a3a;
+  --text-light: #6a6a6a;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+/* ── Screen Toggle ── */
+.screen {
+  display: none;
+}
+.screen.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Welcome Screen ── */
+#welcome {
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(160deg, var(--cream) 0%, #f0e8e2 100%);
+}
+
+.welcome-couple {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--rose-dark);
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.welcome-subtitle {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--sage);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.welcome-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 1.5rem auto;
+}
+
+.welcome-instructions {
+  max-width: 420px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Language Selector ── */
+.lang-selector {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.lang-btn {
+  padding: 0.4rem 1rem;
+  border: 1.5px solid var(--sage);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--sage);
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lang-btn:hover {
+  background: var(--sage-light);
+  color: white;
+}
+
+.lang-btn.active {
+  background: var(--sage);
+  color: white;
+}
+
+/* ── Pill Buttons ── */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--rose);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--rose-dark);
+}
+
+.btn-secondary {
+  background: var(--sage);
+  color: white;
+}
+.btn-secondary:hover {
+  background: var(--sage-dark);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Game Screen ── */
+#game {
+  height: 100dvh;
+  position: relative;
+}
+
+/* Header Bar */
+.game-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+}
+
+.game-round {
+  color: var(--sage);
+  font-weight: bold;
+}
+
+.game-score {
+  color: var(--rose-dark);
+  font-weight: bold;
+}
+
+/* Map */
+#map {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 165px;
+  z-index: 1;
+}
+
+/* Clue Card */
+.clue-card {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 1.25rem;
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.clue-text {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  min-height: 1.5em;
+}
+
+.hint-text {
+  font-size: 0.8rem;
+  color: var(--sage);
+  margin: 0.25rem 0 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.clue-card .btn {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* ── Result Bottom Sheet ── */
+.result-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+}
+.result-overlay.visible {
+  display: flex;
+}
+
+.result-sheet {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 1.5rem 1.25rem;
+  padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  text-align: center;
+  animation: slideUp 0.35s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.result-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.result-city {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.result-country {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.result-distance {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.15rem;
+}
+
+.result-feedback {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.result-sheet .btn {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Distance color tiers */
+.tier-perfect { color: var(--sage); }
+.tier-close { color: var(--sage-light); }
+.tier-ok { color: var(--gold); }
+.tier-far { color: var(--rose); }
+
+/* ── Results Screen ── */
+#results {
+  height: 100dvh;
+  align-items: center;
+  padding: 2rem 1.5rem 6rem;
+  background: linear-gradient(160deg, var(--cream) 0%, #f0e8e2 100%);
+  overflow-y: auto;
+}
+
+#btn-replay {
+  position: sticky;
+  bottom: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.results-title {
+  font-size: 1.5rem;
+  color: var(--sage);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.results-total {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.results-avg {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+#results-map {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.results-list {
+  width: 100%;
+  max-width: 500px;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.results-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+}
+
+.results-list .round-place {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.results-list .round-distance {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ── Custom Leaflet Markers ── */
+.marker-guess,
+.marker-actual {
+  width: 24px;
+  height: 34px;
+  position: relative;
+}
+
+.marker-guess::before,
+.marker-actual::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  top: 0;
+  left: 0;
+}
+
+.marker-guess::after,
+.marker-actual::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  top: 7px;
+  left: 7px;
+}
+
+.marker-guess::before {
+  background: var(--rose);
+}
+.marker-actual::before {
+  background: var(--sage);
+}
+
+/* Dashed gold line between guess and actual */
+.guess-line {
+  stroke: var(--gold);
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+}
+
+/* ── Results Map Emoji Pins ── */
+.results-map-pin {
+  font-size: 1.4rem;
+  line-height: 28px;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+/* ── RTL Support ── */
+[dir="rtl"] .game-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .results-list li {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .clue-text,
+[dir="rtl"] .welcome-instructions {
+  direction: rtl;
+}
+
+/* ── Responsive ── */
+@media (max-height: 600px) {
+  #map {
+    bottom: 135px;
+  }
+  .clue-card {
+    padding: 0.75rem 1rem;
+  }
+  .clue-text {
+    font-size: 0.9rem;
+  }
+}

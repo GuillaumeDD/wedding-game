@@ -1,0 +1,268 @@
+[
+  {
+    "id": "beirut",
+    "city": { "fr": "Beyrouth", "en": "Beirut", "ar": "بيروت" },
+    "country": { "fr": "Liban", "en": "Lebanon", "ar": "لبنان" },
+    "lat": 33.8938,
+    "lng": 35.5018,
+    "clue": {
+      "fr": "Où le cèdre veille sur une ville qui renaît sans cesse de ses cendres",
+      "en": "Where the cedar watches over a city that endlessly rises from its ashes",
+      "ar": "حيث تسهر الأرزة على مدينة تنهض من رمادها بلا انقطاع"
+    },
+    "hint": { "fr": "Moyen-Orient", "en": "Middle East", "ar": "الشرق الأوسط" },
+    "emoji": "🇱🇧"
+  },
+  {
+    "id": "rouen",
+    "city": { "fr": "Rouen", "en": "Rouen", "ar": "روان" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 49.4432,
+    "lng": 1.0999,
+    "clue": {
+      "fr": "La ville aux cent clochers où Jeanne a vu ses dernières flammes",
+      "en": "The city of a hundred spires where Joan saw her last flames",
+      "ar": "مدينة المئة برج حيث أُحرقت جان دارك في آخر ما شهدته من نيران"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "caen",
+    "city": { "fr": "Caen", "en": "Caen", "ar": "كان" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 49.1829,
+    "lng": -0.3707,
+    "clue": {
+      "fr": "Guillaume le Conquérant y a bâti son château avant de traverser la Manche",
+      "en": "William the Conqueror built his castle here before crossing the Channel",
+      "ar": "هنا بنى وليام الفاتح قلعته قبل أن يعبر القناة الإنجليزية"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "paris",
+    "city": { "fr": "Paris", "en": "Paris", "ar": "باريس" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "clue": {
+      "fr": "La dame de fer veille sur les amoureux au bord de la Seine",
+      "en": "The iron lady watches over lovers along the banks of the Seine",
+      "ar": "السيدة الحديدية ترعى العشّاق على ضفاف السين"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "toulouse",
+    "city": { "fr": "Toulouse", "en": "Toulouse", "ar": "تولوز" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 43.6047,
+    "lng": 1.4442,
+    "clue": {
+      "fr": "La ville rose où les avions rêvent de ciel et de violettes",
+      "en": "The pink city where planes dream of sky and violets",
+      "ar": "المدينة الوردية حيث تحلم الطائرات بالسماء والبنفسج"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "marseille",
+    "city": { "fr": "Marseille", "en": "Marseille", "ar": "مرسيليا" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 43.2965,
+    "lng": 5.3698,
+    "clue": {
+      "fr": "Un vieux port, une bonne mère et le parfum de bouillabaisse dans l'air salé",
+      "en": "An old port, a good mother, and the scent of bouillabaisse in the salty air",
+      "ar": "المرفأ العتيق، رائحة bouillabaisse في الهواء، وBonne-Mère تطلّ على المدينة من فوق تلّتها"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "rome",
+    "city": { "fr": "Rome", "en": "Rome", "ar": "روما" },
+    "country": { "fr": "Italie", "en": "Italy", "ar": "إيطاليا" },
+    "lat": 41.9028,
+    "lng": 12.4964,
+    "clue": {
+      "fr": "Tous les chemins y mènent, entre fontaines et vestiges éternels",
+      "en": "All roads lead here, among fountains and eternal ruins",
+      "ar": "كل الطرق تؤدي إلى هنا بين النوافير والآثار الخالدة"
+    },
+    "hint": { "fr": "Europe", "en": "Europe", "ar": "أوروبا" },
+    "emoji": "🇮🇹"
+  },
+  {
+    "id": "moscow",
+    "city": { "fr": "Moscou", "en": "Moscow", "ar": "موسكو" },
+    "country": { "fr": "Russie", "en": "Russia", "ar": "روسيا" },
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "clue": {
+      "fr": "Des bulbes colorés dansent sur la Place Rouge sous la neige",
+      "en": "Colorful domes dance on the Red Square beneath the snow",
+      "ar": "قباب ملونة ترقص في الساحة الحمراء تحت الثلج"
+    },
+    "hint": { "fr": "Europe de l'Est", "en": "Eastern Europe", "ar": "أوروبا الشرقية" },
+    "emoji": "🇷🇺"
+  },
+  {
+    "id": "ramallah",
+    "city": { "fr": "Ramallah", "en": "Ramallah", "ar": "رام الله" },
+    "country": { "fr": "Palestine", "en": "Palestine", "ar": "فلسطين" },
+    "lat": 31.9038,
+    "lng": 35.2034,
+    "clue": {
+      "fr": "Collines d'oliviers où la hauteur de Dieu porte bien son nom",
+      "en": "Olive hills where God's height lives up to its name",
+      "ar": "تلال الزيتون حيث يليق اسم رام الله بعلوّها"
+    },
+    "hint": { "fr": "Moyen-Orient", "en": "Middle East", "ar": "الشرق الأوسط" },
+    "emoji": "🇵🇸"
+  },
+  {
+    "id": "rio",
+    "city": { "fr": "Rio de Janeiro", "en": "Rio de Janeiro", "ar": "ريو دي جانيرو" },
+    "country": { "fr": "Brésil", "en": "Brazil", "ar": "البرازيل" },
+    "lat": -22.9068,
+    "lng": -43.1729,
+    "clue": {
+      "fr": "Un rédempteur les bras ouverts domine la baie et la samba",
+      "en": "A redeemer with open arms overlooks the bay and the samba",
+      "ar": "المسيح الفادي يفرد ذراعيه من فوق كوركوفادو، يعانق الخليج والمدينة المليئة بالسامبا"
+    },
+    "hint": { "fr": "Amérique du Sud", "en": "South America", "ar": "أمريكا الجنوبية" },
+    "emoji": "🇧🇷"
+  },
+  {
+    "id": "abidjan",
+    "city": { "fr": "Abidjan", "en": "Abidjan", "ar": "أبيدجان" },
+    "country": { "fr": "Côte d'Ivoire", "en": "Ivory Coast", "ar": "ساحل العاج" },
+    "lat": 5.3600,
+    "lng": -4.0083,
+    "clue": {
+      "fr": "La perle des lagunes où le cacao parfume les rues animées",
+      "en": "The pearl of the lagoons where cocoa scents the bustling streets",
+      "ar": "لؤلؤة البحيرات حيث يعبق الكاكاو في الشوارع الصاخبة"
+    },
+    "hint": { "fr": "Afrique", "en": "Africa", "ar": "أفريقيا" },
+    "emoji": "🇨🇮"
+  },
+  {
+    "id": "boston",
+    "city": { "fr": "Boston", "en": "Boston", "ar": "بوسطن" },
+    "country": { "fr": "États-Unis", "en": "United States", "ar": "الولايات المتحدة" },
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "clue": {
+      "fr": "Du thé dans le port et des briques rouges le long du Freedom Trail",
+      "en": "Tea in the harbor and red bricks along the Freedom Trail",
+      "ar": "شاي في الميناء وطوب أحمر على طول درب الحرية"
+    },
+    "hint": { "fr": "Amérique du Nord", "en": "North America", "ar": "أمريكا الشمالية" },
+    "emoji": "🇺🇸"
+  },
+  {
+    "id": "manila",
+    "city": { "fr": "Manille", "en": "Manila", "ar": "مانيلا" },
+    "country": { "fr": "Philippines", "en": "Philippines", "ar": "الفلبين" },
+    "lat": 14.5995,
+    "lng": 120.9842,
+    "clue": {
+      "fr": "Sept mille îles et un jeepney coloré dans la perle de l'Orient",
+      "en": "Seven thousand islands and a colorful jeepney in the Pearl of the Orient",
+      "ar": "سبعة آلاف جزيرة وجيبني ملون في لؤلؤة الشرق"
+    },
+    "hint": { "fr": "Asie", "en": "Asia", "ar": "آسيا" },
+    "emoji": "🇵🇭"
+  },
+  {
+    "id": "kathmandu",
+    "city": { "fr": "Katmandou", "en": "Kathmandu", "ar": "كاتماندو" },
+    "country": { "fr": "Népal", "en": "Nepal", "ar": "نيبال" },
+    "lat": 27.7172,
+    "lng": 85.3240,
+    "clue": {
+      "fr": "Au pied des géants de neige, les drapeaux de prière flottent dans la vallée",
+      "en": "At the foot of snow giants, prayer flags flutter in the valley",
+      "ar": "عند أقدام عمالقة الثلج ترفرف أعلام الصلاة في الوادي"
+    },
+    "hint": { "fr": "Asie", "en": "Asia", "ar": "آسيا" },
+    "emoji": "🇳🇵"
+  },
+  {
+    "id": "dubai",
+    "city": { "fr": "Dubaï", "en": "Dubai", "ar": "دبي" },
+    "country": { "fr": "Émirats arabes unis", "en": "United Arab Emirates", "ar": "الإمارات العربية المتحدة" },
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "clue": {
+      "fr": "Des gratte-ciel surgissent du désert comme des mirages dorés",
+      "en": "Skyscrapers rise from the desert like golden mirages",
+      "ar": "ناطحات سحاب تنبثق من الصحراء كسراب ذهبي"
+    },
+    "hint": { "fr": "Moyen-Orient", "en": "Middle East", "ar": "الشرق الأوسط" },
+    "emoji": "🇦🇪"
+  },
+  {
+    "id": "damascus",
+    "city": { "fr": "Damas", "en": "Damascus", "ar": "دمشق" },
+    "country": { "fr": "Syrie", "en": "Syria", "ar": "سوريا" },
+    "lat": 33.5138,
+    "lng": 36.2765,
+    "clue": {
+      "fr": "Le jasmin embaume la plus ancienne capitale habitée du monde",
+      "en": "Jasmine perfumes the oldest continuously inhabited capital in the world",
+      "ar": "الياسمين يعطّر أقدم عاصمة مأهولة في العالم"
+    },
+    "hint": { "fr": "Moyen-Orient", "en": "Middle East", "ar": "الشرق الأوسط" },
+    "emoji": "🇸🇾"
+  },
+  {
+    "id": "le_havre",
+    "city": { "fr": "Le Havre", "en": "Le Havre", "ar": "لوهافر" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 49.4944,
+    "lng": 0.1079,
+    "clue": {
+      "fr": "Un port de béton et de lumière, reconstruit par un seul architecte face à la Manche",
+      "en": "A port of concrete and light, rebuilt by a single architect facing the English Channel",
+      "ar": "ميناء من الإسمنت والنور أعاد بناءه مهندس واحد في مواجهة القناة الإنجليزية"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "strasbourg",
+    "city": { "fr": "Strasbourg", "en": "Strasbourg", "ar": "ستراسبورغ" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 48.5734,
+    "lng": 7.5898,
+    "clue": {
+      "fr": "Entre les maisons à colombages et le Rhin, l'Europe a posé son Parlement",
+      "en": "Between half-timbered houses and the Rhine, Europe chose this city for its Parliament",
+      "ar": "بين بيوت الكولومباج الألزاسية ونهر الراين، أقامت أوروبا برلمانها هنا"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  },
+  {
+    "id": "nantes",
+    "city": { "fr": "Nantes", "en": "Nantes", "ar": "نانت" },
+    "country": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "lat": 47.2184,
+    "lng": -1.5536,
+    "clue": {
+      "fr": "Un éléphant mécanique se promène sur l'île où Jules Verne rêvait de mondes inconnus",
+      "en": "A mechanical elephant roams the island where Jules Verne dreamed of unknown worlds",
+      "ar": "فيل آلي ضخم يتجوّل في الجزيرة، ومدينة جول فيرن الذي حلم فيها بكل عوالم الأرض"
+    },
+    "hint": { "fr": "France", "en": "France", "ar": "فرنسا" },
+    "emoji": "🇫🇷"
+  }
+]
