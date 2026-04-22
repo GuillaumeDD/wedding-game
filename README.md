@@ -16,7 +16,7 @@ Built for a French–Lebanese wedding whose invitees are coming from all over th
 
 - **Trilingual UI (FR / EN / AR)** — French and English for the two family languages, Arabic (with a Lebanese dialect flavor) for guests from Lebanon and the wider region.
 - **RTL layout support** — Arabic reverses the layout via `dir="rtl"` on `<html>` and matching `[dir="rtl"]` selectors in CSS.
-- **Real-world guest cities as rounds** — the 16 rounds are actual places guests are coming from, which is what makes the game meaningful as a wedding activity rather than a generic trivia game.
+- **Real-world guest cities as rounds** — the 19 rounds are actual places guests are coming from, which is what makes the game meaningful as a wedding activity rather than a generic trivia game.
 
 This repo is published as a vibe-coding portfolio piece. The couple's names and any other personally-identifying information have been replaced with placeholders like `[PERSON A]` and `[PERSON B]`.
 
@@ -55,7 +55,7 @@ Distance between the guessed and actual coordinates is computed with the Haversi
 ## Features
 
 - Three-screen SPA (welcome / game / results), toggled via a single `.active` class on each `<section>`.
-- 16 rounds, each with a city + country + trilingual clue.
+- 19 rounds, each with a city + country + trilingual clue.
 - Three languages (FR / EN / AR) with full RTL support for Arabic.
 - Touch-friendly Leaflet map with OpenStreetMap tiles.
 - Mid-session resume via `localStorage` — close the tab and come back.
@@ -74,7 +74,7 @@ Distance between the guessed and actual coordinates is computed with the Haversi
 index.html     Three-screen SPA (welcome, game, results). Includes Leaflet from CDN.
 style.css      Wedding palette (rose / sage / gold), Leaflet overrides, RTL rules.
 game.js        Game logic, i18n object, Leaflet setup, Haversine scoring. Single script, no modules.
-guests.json    16 rounds — city, country, lat/lng, trilingual clues.
+guests.json    19 rounds — city, country, lat/lng, trilingual clues.
 robots.txt     Disallow all — part of the privacy-by-design setup.
 CLAUDE.md      Project notes for Claude Code sessions.
 ```

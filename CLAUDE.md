@@ -9,7 +9,7 @@ Static SPA — four files, zero build step, no backend. Deploys to any static ho
 - `index.html` — Three-screen SPA (welcome, game, results) toggled via `.active` class
 - `style.css` — Wedding palette (rose/sage/gold), Leaflet overrides, RTL support
 - `game.js` — Game logic, i18n, Leaflet map, Haversine scoring (single script, no modules)
-- `guests.json` — 16 location rounds with trilingual clues
+- `guests.json` — 19 location rounds with trilingual clues
 
 ## Key Conventions
 - **No build step**: All code runs directly in the browser. No bundlers, no transpilers.
@@ -28,6 +28,6 @@ python3 -m http.server 8000
 Manual browser testing — no test framework. Verify:
 1. Language switching (FR/EN/AR + RTL)
 2. Map interaction (tap to place pin, drag to refine)
-3. Full 16-round playthrough with scoring
+3. Full 19-round playthrough with scoring
 4. Results screen and replay
 5. Mobile viewports (Chrome DevTools)
